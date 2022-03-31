@@ -14,7 +14,7 @@ socket.on("messageTo" + sender, function (data) {
 });
 
 socket.on("ACKTo" + sender, function (data) {
-  document.getElementById("sent" + data.id).innerHTML += " (delivered)";
+  document.getElementById("sent" + data.id).innerHTML += " (delivered) ";
 });
 
 socket.on("typingTo"+sender,(from)=>{
